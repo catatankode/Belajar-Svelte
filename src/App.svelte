@@ -1,11 +1,15 @@
 <script>
-	export let name;
-	export let addr;
+	const name = "Rendi Wijiatmoko";
+	let point = 0;
+	const increase = () => point += 1;
+	const decrese = () => point -= 1;
 </script>
 
 <main>
 	<h1>Hello {name}!</h1>
-	<p>Visit my room at {addr}</p>
+	<p>Nilai awal {point}</p>
+	<button on:click={increase}>add</button>
+	<button on:click={decrese}>decrese</button>
 </main>
 
 <style>
