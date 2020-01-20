@@ -10,6 +10,7 @@
 	<p>Nilai awal {point}</p>
 	<button on:click={increase}>add</button>
 	<button on:click={decrese}>decrese</button>
+	<input type="number" bind:value={point}/>
 </main>
 
 <style>
